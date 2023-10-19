@@ -25,7 +25,9 @@ class Disciplina:
         return self.__times
 
     def join_table(self, table):
-        table.insert({
-            "code": self.__times, 
-            "name": self.__name
-        })
+        table.insert(
+            {
+                "times": self.__times, 
+                "name": self.__name
+            }
+        )
