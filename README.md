@@ -8,7 +8,7 @@ Um simples programa em Python para ajudar os estudantes da UNIFAP a administrar 
 * Instale as bibliotecas `pandas` e `tkinter`
 
 ```bash
-pip install tkinter
+pip install tk
 ```
 
 ```bash
