@@ -6,7 +6,7 @@ class Disciplina:
         valids = []
 
         for horario in times:
-            horario_regex = re.compile(r'^([1-7]){1,7}([ntNT])([1-5]){1,5}')
+            horario_regex = re.compile(r'^([1-6])([ntNT])([1-5]){1,5}')
             result = horario_regex.search(horario)
 
             if result != None:
@@ -25,9 +25,11 @@ class Disciplina:
         return self.__times
 
     def join_table(self, table):
-        table.insert(
+        ret = table.insert(
             {
                 "times": self.__times, 
                 "name": self.__name
             }
         )
+
+        return ret;

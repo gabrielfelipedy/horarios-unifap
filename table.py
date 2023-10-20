@@ -22,19 +22,16 @@ class Table:
         name = matter['name']
 
         if(len(times) == 0):
-            print("Empty")
-            return
+            return -1
         else:
-            print(f"Achou {times}")
-
             for time in times:
                 day_of_week = time[0]
                 shift = time[1]
                 horarios = time[2:]
 
                 for h in horarios:
-                    self.__table.loc[f"{h}{shift}", f"{days[day_of_week]}"] = name 
+                    self.__table.loc[f"{h}{shift}", f"{days[day_of_week]}"] = str(name)
+            return 0
                 
-
     def get_table(self):
-        print(self.__table)
+        return self.__table
