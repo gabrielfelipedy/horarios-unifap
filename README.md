@@ -1,6 +1,6 @@
 # Horários UNIFAP
 
-Um simples programa em Python para ajudar os estudantes da UNIFAP a administrar os horários das disciplinas
+Um simples programa em Python para ajudar os estudantes da UNIFAP a administrar os horários das disciplinas e se matricular nas novas disciplinas de cada semestre
 
 ## Como executar
 
